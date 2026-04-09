@@ -1,0 +1,135 @@
+/* ===========================
+   Reset e base
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===========================
+   Calculadora
+=========================== */
+.calculadora {
+  background-color: #16213e;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 320px;
+}
+
+/* ===========================
+   Visor
+=========================== */
+.visor {
+  background-color: #0f3460;
+  padding: 24px 20px 16px;
+  text-align: right;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.visor__historico {
+  color: #a0aec0;
+  font-size: 14px;
+  min-height: 20px;
+  word-break: break-all;
+  margin-bottom: 4px;
+}
+
+.visor__resultado {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 300;
+  word-break: break-all;
+  line-height: 1.1;
+}
+
+/* ===========================
+   Grade de botões
+=========================== */
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background-color: #0f3460;
+  padding: 1px;
+}
+
+/* ===========================
+   Botões
+=========================== */
+.botao {
+  background-color: #16213e;
+  color: #e2e8f0;
+  border: none;
+  font-size: 20px;
+  padding: 22px 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  user-select: none;
+}
+
+.botao:hover {
+  background-color: #ffffff;
+}
+
+.botao:active {
+  background-color: #2a4a75;
+  transform: scale(0.95);
+}
+
+/* Botões especiais (C, ⌫, %) */
+.botao--especial {
+  color: #63b3ed;
+  font-size: 18px;
+}
+
+/* Botões de operador (+, -, ×, ÷) */
+.botao--operador {
+  background-color: #0f3460;
+  color: #e94560;
+  font-size: 22px;
+}
+
+.botao--operador:hover {
+  background-color: #1a4a80;
+}
+
+.botao--operador.ativo {
+  background-color: #e94560;
+  color: #ffffff;
+}
+
+/* Botão zero (ocupa 2 colunas) */
+.botao--zero {
+  grid-column: span 2;
+  text-align: left;
+  padding-left: 28px;
+}
+
+/* Botão igual */
+.botao--igual {
+  background-color: #e94560;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.botao--igual:hover {
+  background-color: #c73652;
+}
+
+.botao--igual:active {
+  background-color: #a82d45;
+}

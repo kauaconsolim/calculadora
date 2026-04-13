@@ -1,6 +1,4 @@
-/* ===========================
-   Reset e base
-=========================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +6,7 @@
 }
 
 body {
-  background-color: #1a1a2e;
+  background-color: #20206d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +14,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ===========================
-   Calculadora
-=========================== */
 .calculadora {
   background-color: #16213e;
   border-radius: 20px;
@@ -27,9 +22,6 @@ body {
   width: 320px;
 }
 
-/* ===========================
-   Visor
-=========================== */
 .visor {
   background-color: #0f3460;
   padding: 24px 20px 16px;
@@ -56,9 +48,6 @@ body {
   line-height: 1.1;
 }
 
-/* ===========================
-   Grade de botões
-=========================== */
 .botoes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -67,9 +56,6 @@ body {
   padding: 1px;
 }
 
-/* ===========================
-   Botões
-=========================== */
 .botao {
   background-color: #16213e;
   color: #e2e8f0;
@@ -82,7 +68,7 @@ body {
 }
 
 .botao:hover {
-  background-color: #ffffff;
+  background-color: #331b86;
 }
 
 .botao:active {
@@ -90,13 +76,11 @@ body {
   transform: scale(0.95);
 }
 
-/* Botões especiais (C, ⌫, %) */
 .botao--especial {
   color: #63b3ed;
   font-size: 18px;
 }
 
-/* Botões de operador (+, -, ×, ÷) */
 .botao--operador {
   background-color: #0f3460;
   color: #e94560;
@@ -112,14 +96,12 @@ body {
   color: #ffffff;
 }
 
-/* Botão zero (ocupa 2 colunas) */
 .botao--zero {
   grid-column: span 2;
   text-align: left;
   padding-left: 28px;
 }
 
-/* Botão igual */
 .botao--igual {
   background-color: #e94560;
   color: #ffffff;

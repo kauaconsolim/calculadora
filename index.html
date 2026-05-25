@@ -8,14 +8,14 @@
     </head>
     <body>
         <div class="fundo">
-            <h1>Criado por Gabriel</h1>
+            <h1>Criado por Kauã</h1>
             <div class="calculadora">
                 <h1>calculadora</h1>
                 <p id="resultado"></p>
                 <table>
                     <tr>
-                        <td><button class="botao" onclick=""> C </button></td>
-                        <td><button class="botao" onclick=""> < </button></td>
+                        <td><button class="botao" onclick="clean()"> C </button></td>
+                        <td><button class="botao" onclick="back()"> < </button></td>
                         <td><button class="botao" onclick=""> / </button></td>
                         <td><button class="botao" onclick=""> X </button></td>
                     </tr>
@@ -35,8 +35,14 @@
                         <td><button class="botao" onclick=""> 1 </button></td>
                         <td><button class="botao" onclick=""> 2 </button></td>
                         <td><button class="botao" onclick=""> 3 </button></td>
-                        <td><button class="botao" onclick=""> = </button></td>
+                        <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
                     </tr>
+                    <tr>
+                        <td colspan="2"><button class="botao" style="width:106px;" onclick="">0</button></td>
+                    </tr>
+                    </tr>
+                    
+
                 </table>
             </div>
         </div>

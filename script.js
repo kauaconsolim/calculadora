@@ -1,20 +1,22 @@
 function insert(num){
-    var numero=document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML=numero+num;
+    var numero=document.getElementById('table').value;
+    document.getElementById('table').value=numero+num;
 }
 function clean(){
-    document.getElementById('resultado').innerHTML="";
+    document.getElementById('table').value="";
 }
 function back(){
-    var resultado=document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML=resultado.substring(0,resultado.length-1);
+    var resultado=document.getElementById('table').value;
+    document.getElementById('table').value=resultado.substring(0,resultado.length-1);
 }
 function calcular(){
-    var resultado=document.getElementById('resultado').innerHTML;
+    var resultado=document.getElementById('table').value;
     if(resultado){
-        document.getElementById('resultado').innerHTML=eval(resultado);
+        document.getElementById('table').value=eval(resultado);
     }
     else{
-        document.getElementById('resultado').innerHTML="Nada para calcular";
+        document.getElementById('table').value="Nada para calcular";
     }
 }
+
+

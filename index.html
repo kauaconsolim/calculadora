@@ -11,8 +11,10 @@
             <h1>Criado por Kauã</h1>
             <div class="calculadora">
                 <h1>calculadora</h1>
-                <p id="resultado"></p>
+                <p id="resultado" class="table"></p>
+                  <input type="text" id="table" class="table" readonly>
                 <table>
+                    <div class="display" id="resultado"></div>
                     <tr>
                         <td><button class="botao" onclick="clean('C')"> C </button></td>
                         <td><button class="botao" onclick="backspace('<')"> < </button></td>
@@ -32,14 +34,14 @@
                         <td><button class="botao" onclick="insert('+')"> + </button></td>
                     </tr>
                     <tr>
-                        <td><button class="botao" onclick=""> 1 </button></td>
-                        <td><button class="botao" onclick=""> 2 </button></td>
-                        <td><button class="botao" onclick=""> 3 </button></td>
-                        <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                        <td><button class="botao" onclick="insert('1')"> 1 </button></td>
+                        <td><button class="botao" onclick="insert('2')"> 2 </button></td>
+                        <td><button class="botao" onclick="insert('3')"> 3 </button></td>
+                        <td rowspan="2"><button class="botao" style="height: 132px;" onclick="calcular()">=</button></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><button class="botao" style="width:106px;" onclick="">0</button></td>
-                        <td><button onclick="insert('.')"> , </button></td>
+                        <td colspan="2"><button class="botao" style="width: 132px; height: 60px;" onclick="insert('0')">0</button></td>
+                        <td><button class="botao" onclick="insert('.')"> , </button></td>
                     </tr>
                     </tr>
                     
